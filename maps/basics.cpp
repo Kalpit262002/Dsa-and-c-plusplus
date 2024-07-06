@@ -13,11 +13,11 @@ int main(){
 //   cout<<m1[6]<<endl;
   map<int, int> m2;
   m2[1]=3;
-  cout<<m1.size();
+  cout<<m1.size()<<endl;
   cout<<m2[1]<<endl;
     map<int, string>::iterator it;
   for(it = m1.begin(); it != m1.end(); it++){
-    cout<<it->second<<" ";
+    cout<<it->second<<" "<<endl;
   }
   cout << endl;
 
