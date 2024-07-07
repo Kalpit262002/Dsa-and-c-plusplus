@@ -3,20 +3,21 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int febo(int n){
+void febo(int n){
         int a=0;
         int b=1;
         int c=0;
         for(int i=0;i<n;i++){
             c=b+a;
-            b=c;
             a=b;
+            b=c;
+            cout<<c<<" ";
         }
-        return c;
 }
 
 int main(){
     int a;
     cin>>a;
-    cout<<febo(a)<<endl;
+    febo(a);
+    
 }
