@@ -1,22 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int solve(int n){
-        int arr[n];
+int solve(int ar[], int n){
         for(int i=0; i<n; i++){
-            cout<<arr[i]<<" ";
+            cout<<ar[i]<<" ";
         }
         cout<<endl;
 }
 
 int main(){
+    int arr1[10];
     int a;
     cin>>a;
-    solve(a);
-    int b;
-    cin>>b;
-    solve(b);
-    int c;
-    cin>>c;
-    solve(c);
+    int arr2[a];
+    solve(arr1, 10);
+    solve(arr1, 5);
+    solve(arr2, a);
 }
