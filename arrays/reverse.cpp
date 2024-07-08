@@ -15,7 +15,7 @@ int solve(int ar[], int n){
         arr1[i]=ar[i];
     }
     int i=0,j=n-1;
-    for(int a=0;a<n/2;a++){
+    for(int a=0;i<j;a++){
         swap(arr1[i],arr1[j]);
         i++;
         j--;
