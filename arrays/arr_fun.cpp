@@ -10,10 +10,8 @@ int solve(int ar[], int n){
 
 int main(){
     int arr1[10];
-    int a;
-    cin>>a;
-    int arr2[a];
+    int arr2[100];
     solve(arr1, 10);
     solve(arr1, 5);
-    solve(arr2, a);
+    solve(arr2, 2);
 }
