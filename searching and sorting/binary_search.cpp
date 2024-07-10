@@ -11,7 +11,7 @@ int binary(int ar[],int n,int m){
         if(ar[mid]==m){
             count++;
         }
-        if(m>ar[mid]){
+        else if(m>ar[mid]){
             start=mid+1;
         }
         else{
