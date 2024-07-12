@@ -4,12 +4,12 @@ using namespace std;
 int binary(int ar[],int n,int m){
     int start=0;
     int last=n-1;
-    int mid=((start)+((last-start)/2));
+    int mid=((start/2)+(last/2));
     
     int count=0;
     while(start<=last){
         if(ar[mid]==m){
-            count++;
+            return mid;
         }
         else if(m>ar[mid]){
             start=mid+1;
@@ -17,15 +17,9 @@ int binary(int ar[],int n,int m){
         else{
             last=mid-1;
         }
-        mid=((start)+((last-start)/2));
-        
-    }
-    if(count==0){
-        cout<<"Element not found";
-    }
-    else{
-        cout<<"Found at "<<mid<<" index";
-    }
+        mid=((start/2)+(last/2));
+}
+ return -1;
 }
 
 int main(){
@@ -37,6 +31,6 @@ int main(){
         cin>>arr[i];
     }
     cin>>m;
-    binary(arr,n,m);
+    cout<<"Element found at "<<binary(arr,n,m)<<" index";
     return 0;
 }
