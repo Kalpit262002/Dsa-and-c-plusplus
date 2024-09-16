@@ -13,6 +13,11 @@
 #include<conio.h>
 int i;
 int main(){
+    int k= i++;
+    printf("%d",k);
+    printf("%d",i);
+    printf("%d",k);
+    // printf("Else");
     if(i);
     else{
         printf("Else");
