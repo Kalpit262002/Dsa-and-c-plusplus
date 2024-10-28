@@ -12,6 +12,16 @@ class b:public a{
         cout<<"b"<<endl;
     }
 };
+class c{
+    public:
+    virtual void fun()=0;
+};
+class d:public c{
+    public:
+    void fun(){
+        cout<<"2"<<endl;
+    }
+};
 
 int main(){
     a *pt,ob1;
@@ -20,6 +30,9 @@ int main(){
     pt->fun();
     pt=&ob1;
     pt->fun();
-
+    c *pt2;
+    d ob2;
+    pt2=&ob2;
+    pt2->fun();
     return 0;
 }
