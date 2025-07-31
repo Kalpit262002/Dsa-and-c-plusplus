@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define fi_n for(int i=0;i<n;i++)
+#define fi_n for(int i=0;i<n;i++) //Macro
 int func(){
 
 }   
